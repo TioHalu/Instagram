@@ -21,7 +21,9 @@ const App = () => {
 
     const bottomTabSceen = () => {
         return(
-            <Tab.Navigator screenOptions={({route}) => ({
+            <Tab.Navigator
+            screenOptions={({route}) => ({
+                tabBarHideOnKeyboard:true,
                 tabBarShowLabel:false,
                 headerShown:false,
                 tabBarStyle: {
